@@ -20,6 +20,13 @@ nav a {
   text-decoration: none;
 }
 
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.6); /* black with 60% transparency */
+  display: inline-block;
+  padding: 1em 2em;
+  border-radius: 8px;
+}
+
 .hero {
   background: url('hero-image.jpg') center/cover no-repeat;
   color: white;
