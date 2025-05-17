@@ -26,21 +26,62 @@
   <section id="portfolio" class="gallery">
     <h2>Portfolio</h2>
     <div class="grid">
-      <img src="img/tattoo2.jpg" alt="Tattoo 2"/>
-      <img src="img/tattoo3.jpg" alt="Tattoo 3"/>
-	  <img src="img/tattoo4.jpg" alt="Tattoo 4"/>
-      <img src="img/tattoo5.jpg" alt="Tattoo 5"/>
-      <img src="img/tattoo6.jpg" alt="Tattoo 6"/>
-	  <img src="img/tattoo7.jpg" alt="Tattoo 7"/>
-	  <img src="img/tattoo8.jpg" alt="Tattoo 8"/>
-	  <img src="img/tattoo9.jpg" alt="Tattoo 9"/>
-	  <img src="img/tattoo10.jpg" alt="Tattoo 10"/>
-	  <img src="img/tattoo11.jpg" alt="Tattoo 11"/>
-	  <img src="img/tattoo12.jpg" alt="Tattoo 12"/>
-	  <img src="img/tattoo13.jpg" alt="Tattoo 13"/>
-	  <img src="img/tattoo14.jpg" alt="Tattoo 14"/>
-	  <img src="img/tattoo15.jpg" alt="Tattoo 15"/>
-      <!-- Add more images as needed -->
+		<div class="image-container">
+			<img src="img/tattoo17.jpg" alt="Kenny Tattoo Fresh" title="Kenny Tattoo Fresh" class="clickable-image" />
+		</div>
+		
+		<div class="image-container">
+			<img src="img/tattoo4.jpg" alt="Kenny Tattoo Healed" title="Kenny Tattoo Healed" class="clickable-image" />
+		</div>
+		
+		<div class="image-container">
+			<img src="img/tattoo18.jpg" alt="Adelina Fresh Tattoo" title="Adelina Fresh Tattoo" class="clickable-image" />
+		</div>
+
+		<div class="image-container">
+			<img src="img/tattoo5.jpg" alt="Adelina Healed Tattoo" title="Adelina Healed Tattoo" class="clickable-image" />
+		</div>
+
+		<div class="image-container">
+			<img src="img/tattoo6.jpg" alt="Wile E. Coyote Split Tattoo" title="Wile E. Coyote Split Tattoo" class="clickable-image" />
+		</div>
+
+		<div class="image-container">
+			<img src="img/tattoo7.jpg" alt="Tom & Jerry Tattoo" title="Tom & Jerry Tattoo" class="clickable-image" />
+		</div>
+
+		<div class="image-container">
+			<img src="img/tattoo8.jpg" alt="Galaxy Hand Tattoo" title="Galaxy Hand Tattoo" class="clickable-image" />
+		</div>
+
+		<div class="image-container">
+			<img src="img/tattoo9.jpg" alt="Paper Bag Eyehole Tattoo" title="Paper Bag Eyehole Tattoo" class="clickable-image" />
+		</div>
+
+		<div class="image-container">
+			<img src="img/tattoo10.jpg" alt="Smile/Cry Face Tattoo" title="Smile/Cry Face Tattoo" class="clickable-image" />
+		</div>
+
+		<div class="image-container">
+			<img src="img/tattoo11.jpg" alt="308 Tattoo" title="308 Tattoo" class="clickable-image" />
+		</div>
+
+		<div class="image-container">
+			<img src="img/tattoo12.jpg" alt="308 Tattoo" title="308 Tattoo" class="clickable-image" />
+		</div>
+
+		<div class="image-container">
+			<img src="img/tattoo13.jpg" alt="999 in Roman Numerals Tattoo" title="999 in Roman Numerals Tattoo" class="clickable-image" />
+		</div>
+
+		<div class="image-container">
+			<img src="img/tattoo14.jpg" alt="Queen Bee Tattoo" title="Queen Bee Tattoo" class="clickable-image" />
+		</div>
+
+		<div class="image-container">
+			<img src="img/tattoo15.jpg" alt="Loyalty Tattoo" title="Loyalty Tattoo" class="clickable-image" />
+		</div>	
+			<!-- Add more images as needed -->
     </div>
   </section>
 
@@ -62,5 +103,15 @@
   <footer>
     <p>&copy; 2025 Dragon Designs</p> <p> All rights reserved</p>
   </footer>
+  
+  <script>
+   document.querySelectorAll('.clickable-image').forEach(img => {
+     img.addEventListener('click', () => {
+       img.classList.toggle('enlarged');
+     });
+   });
+  </script>
+
+
 </body>
 </html>
