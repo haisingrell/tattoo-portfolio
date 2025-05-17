@@ -20,18 +20,18 @@ nav a {
   text-decoration: none;
 }
 
-.hero-text {
-  background-color: rgba(0, 0, 0, 0.6); /* black with 60% transparency */
-  display: inline-block;
-  padding: 1em 2em;
-  border-radius: 8px;
-}
-
 .hero {
   background: url('img/IMG_0014.jpg') center/cover no-repeat;
   color: white;
   text-align: center;
   padding: 5em 2em;
+}
+
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.6); /* black with 60% transparency */
+  display: inline-block;
+  padding: 1em 2em;
+  border-radius: 8px;
 }
 
 .gallery {
@@ -79,4 +79,23 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1em;
+}
+
+/* ===================JavaScript Section ================================ */
+
+.image-container {
+  display: inline-block;
+  margin: 0.001em;
+  vertical-align: top;
+}
+
+.clickable-image {
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.clickable-image.enlarged {
+  transform: scale(1.8);
+  z-index: 2;
+  cursor: zoom-out;
 }
